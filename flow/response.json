@@ -1,0 +1,133 @@
+{
+    "DEFAULT":{
+        "replyMessage":[
+            "*Esta respuesta es un respuesta DEFAULT cuando no se consigue una palabra clave \n",
+            "Prueba escribiendo *hola* \n"
+        ],
+        "media":null,
+        "trigger":null
+    },
+    "STEP_0":{
+        "replyMessage":[
+            "El flujo ha finalizado \n"
+        ],
+        "media":null,
+        "trigger":null
+    },
+    "STEP_1":{
+        "media":"1646258003542.gif",
+        "replyMessage":[
+            
+        ],
+        "trigger":null,
+
+        "actions":{
+            "title":"Hola!✌️ Bienvenido al 🤖 CHATBOT de Kryptonite\n",
+            "message":"*¿Que te interesa comprar?* \n",
+            "media":"",
+            "buttons":[
+                {"body":"Producto 1"},
+                {"body":"Producto 2"},
+                {"body":"Producto 3"}
+            ]
+        }
+    },
+    "STEP_2":{
+        "replyMessage":[
+            "Perfecto, te voy a pasar la lista "
+        ],
+
+        "actions":{
+            "title":"¿Que te interesa comprar?",
+            "message":"Segundo parrafo",
+            "footer":"Gracias",
+            "buttons":[
+                {"body":"Car"},
+                {"body":"Producto 2"},
+                {"body":"Producto 3"}
+            ]
+        },
+        "media":"null",
+        "trigger":null
+    },
+    "STEP_2_1":{
+        "replyMessage":[
+            "¿Cuanta cantidad te gustaria? \n"
+        ],
+        "media":"",
+        "trigger":null
+    },
+    "STEP_2_2":{
+        "replyMessage":[
+            "¿Cuanta cantidad te gustaria? \n"
+        ],
+        "media":null,
+        "trigger":null
+    },
+    "STEP_2_3":{
+        "replyMessage":[
+            "¿Cuanta cantidad te gustaria? \n"
+        ],
+        "media":null,
+        "trigger":null
+    },
+    "STEP_2_4":{
+        "replyMessage":[
+            "¿Cuanta cantidad te gustaria? (Solo el numero) \n"
+        ],
+        "media":null,
+        "trigger":null
+    },
+    "STEP_3":{
+        "replyMessage":[
+            "¿Ok perfecto, nos podrias decir como llamarte? \n"
+        ],
+        "media":null,
+        "trigger":null
+    },
+    "STEP_4":{
+        "replyMessage":[
+            "Genial NOMBRE, \n",
+            "¿cual es la direccion de envio? \n"
+        ],
+        "media":null,
+        "trigger":null
+    },
+    "STEP_5":{
+        "replyMessage":[
+            "Muy bien te comparto el canal de Youtube \n",
+            "https://youtube.com/leifermendez \n"
+        ],
+        "media":null,
+        "trigger":null
+    },
+    "STEP_6":{
+        "replyMessage":[
+            "Perfecto, te voy a pasar la lista ",
+            "de los temas que tengo y un breve video 🙂🤖 \n\n",
+            "*Angular* Basico (Pago) \n",
+            "*Angular* Basico (Gratis) \n",
+            "*Node* Basico (Gratis) \n",
+            "*NGRX* Basico (Gratis) \n",
+            "*AWS* Basico (Pago) \n\n",
+            "Escribe la palabra del tema que te interese \n"
+        ],
+        "media":"https://i.giphy.com/media/5J5gN0WUk0VToHaK2p/giphy-downsized.gif",
+        "trigger":null
+    },
+    "STEP_7":{
+        "replyMessage":[
+            "Vente al telegram \n",
+            "https://t.me/leifermendez \n"
+        ],
+        "media":null,
+        "trigger":null
+    },
+    "STEP_8":{
+        "replyMessage":[
+            "Esto es una nota de voz \n"
+        ],
+        "media":"nota-de-voz.mp3",
+        "trigger":null
+    }
+}
