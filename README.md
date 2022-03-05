@@ -11,9 +11,9 @@ El siguiente proyecto se realizó por [Alberto Lopez] donde aprendemos a crear y
 #### Acceso rápido
 > Si tienes una cuenta en __heroku__ puedes desplegar este proyecto con (1 click)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Albeertiitooo/bot-whatsapp-nyc
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Albeertiitooo/bot-whatsapp-nyc)
 
-> Comprarme un cafe!
+> Comprame un cafe!
 
 VENMO: https://venmo.com/u/albeertiitooo
 
