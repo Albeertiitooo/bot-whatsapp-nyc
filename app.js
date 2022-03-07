@@ -46,14 +46,14 @@ var sessionData;
  */
 const listenMessage = () => client.on('message', async msg => {
     const { from, body, hasMedia } = msg;
-    // Este bug lo reporto Lucas Aldeco Brescia para evitar que se publiquen estados
     if (from === 'status@broadcast') {
         return
     }
     message = body.toLowerCase();
-    console.log('BODY',message)
+    console.log('Message: ',message)
     const number = cleanNumber(from)
     await readChat(number, message)
+
 
     /**
      * Guardamos el archivo multimedia que envia
@@ -76,24 +76,52 @@ const listenMessage = () => client.on('message', async msg => {
         return
     }
 
-    /**
-    * Ver si viene de un paso anterior
-    * Aqui podemos ir agregando más pasos
-    * a tu gusto!
-    */
+    var step = await getMessages(message);
+    console.log({ step })
 
-    const lastStep = await lastTrigger(from) || null;
-    console.log({ lastStep })
-    if (lastStep) {
-        const response = await responseMessages(lastStep)
-        await sendMessage(client, from, response.replyMessage);
-    }
+    
+/**
+     * Almacenamos la informacion de el PRODUCTO elegido.
+     */
+
+
+ var lastStep = '';
+ let productSelection = '';
+ let quantitySelection = '';
+ 
+
+if (step === 'STEP_2_1' || step === 'STEP_2_2' || step === 'STEP_2_3'){
+
+    productSelection = message;
+
+    var lastStep = 'STEP_2'
+
+    console.log('LastStep: ', lastStep);
+    console.log('Elegiste:', productSelection)
+
+
+
+    var lastStep = 'STEP_2'
+}
+
+/**
+     * Almacenamos la informacion de la CANTIDAD elegida.
+     */
+
+if (step === 'STEP_3'){
+
+    quantitySelection = message;
+
+    console.log('LastStep: ', lastStep);
+    console.log('Elegiste: ',quantitySelection, 'de', productSelection )
+
+    lastStep = 'STEP_3'
+}
 
     /**
      * Respondemos al primero paso si encuentra palabras clave
      */
-    const step = await getMessages(message);
-    console.log({ step })
+
 
     if (step) {
         const response = await responseMessages(step);
@@ -176,9 +204,6 @@ const withOutSession = () => {
     console.log([
         '🙌 El core de whatsapp se esta actualizando',
         '🙌 para proximamente dar paso al multi-device',
-        '🙌 falta poco si quieres estar al pendiente unete',
-        '🙌 http://t.me/leifermendez',
-        '________________________',
     ].join('\n'));
 
     client = new Client({

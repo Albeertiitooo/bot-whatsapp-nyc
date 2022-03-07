@@ -21,9 +21,11 @@
     },
     {
         "keywords":  [
-            "producto",
+            "product",
             "info",
-            "material"  
+            "material",
+            "no",
+            "n"
         
         ],
         "key": "STEP_2"
@@ -54,51 +56,36 @@
     },
     {
         "keywords":  [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"
+            "1 gramos",
+            "2 gramos",
+            "3 gramos",
+            "4 gramos",
+            "5 gramos",
+            "6 gramos",
+            "7 gramos"
         ],
         "key": "STEP_3"
     },
-
-
-
-
     {
         "keywords":  [
-            "muchas gracias",
-            "ok",
-            "gracias",
-            "vale gracias"
+            "juan",
+            "manolo",
+            "benito",
+            "julian"
         ],
         "key": "STEP_4"
     },
     {
         "keywords":  [
-            "youtube"
+            "larchmont"
         ],
         "key": "STEP_5"
     },
     {
         "keywords":  [
-            "VER_CURSOS"
+            "y",
+            "yes"
         ],
         "key": "STEP_6"
-    },
-    {
-        "keywords":  [
-            "telegram"
-        ],
-        "key": "STEP_7"
-    },
-    {
-        "keywords":  [
-            "audio"
-        ],
-        "key": "STEP_8"
     }
 ]
